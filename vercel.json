@@ -1,5 +1,13 @@
 {
-  "buildCommand": "uv run myst build --html --ci",
-  "outputDirectory": "_build/html",
-  "installCommand": "uv sync"
+  "builds": [
+    {
+      "src": "pyproject.toml",
+      "use": "@vercel/static-build",
+      "config": {
+        "installCommand": "uv sync",
+        "buildCommand": "uv run myst build --html --ci",
+        "distDir": "_build/html"
+      }
+    }
+  ]
 }
