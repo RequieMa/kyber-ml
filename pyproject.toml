@@ -1,0 +1,10 @@
+[project]
+name = "kyber-ml"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "jupyter-book>=2.1.6",
+    "mystmd>=1.10.1",
+]

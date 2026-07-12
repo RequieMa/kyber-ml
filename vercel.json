@@ -1,0 +1,5 @@
+{
+  "buildCommand": "uv run myst build --html --ci",
+  "outputDirectory": "_build/html",
+  "installCommand": "uv sync"
+}

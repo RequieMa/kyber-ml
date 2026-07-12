@@ -1,0 +1,43 @@
+version: 1
+project:
+  id: 79191311-447a-4256-80c4-2e8a26ba8a9f
+  title: Kyber ML
+  description: Machine learning from first principles
+  authors:
+    - name:
+        literal: RequieMa
+  github: https://github.com/RequieMa/kyber-ml
+  toc:
+    - file: about.md
+    - title: En
+      file: book/en/en-intro.md
+      children:
+        - file: book/en/en-dl-overview.md
+    - title: 中文
+      file: book/zh/zh-intro.md
+      children:
+        - file: book/zh/zh-dl-overview.md
+    - title: Support
+      children:
+        - file: about.md
+        - file: contact.md
+        - file: privacy.md
+        - file: terms.md
+  exports:
+    - id: tex-en-dl-overview
+      format: tex
+      article: book/en/en-dl-overview.md
+      output: exports/en-dl-overview.tex
+    - id: tex-zh-dl-overview
+      format: tex
+      article: book/zh/zh-dl-overview.md
+      output: exports/zh-dl-overview.tex
+site:
+  template: book-theme
+  options:
+    logo_text: Kyber ML
+  actions:
+    - title: En
+      url: /en-intro
+    - title: 中文
+      url: /zh-intro
