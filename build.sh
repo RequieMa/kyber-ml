@@ -13,6 +13,4 @@ for html_file in $(find _build/html -name "*.html" -type f); do
 done
 
 # Copy static files (ads.txt, etc.) to build output
-if [ -d public ]; then
-  cp -r public/* _build/html/ 2>/dev/null || true
-fi
+cp ads.txt _build/html/ads.txt
