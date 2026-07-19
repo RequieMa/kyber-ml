@@ -13,25 +13,31 @@ project:
       file: book/en/en-intro.md
       children:
         - file: book/en/en-dl-overview.md
+        - file: book/en/en-classical-ml.md
+        - file: book/en/en-math-foundations.md
+        - file: book/en/en-neural-networks.md
+        - file: book/en/en-deep-learning.md
+        - file: book/en/en-sequences-nlp.md
+        - file: book/en/en-transformers-llm.md
+        - file: book/en/en-llm-ecosystem.md
     - title: 中文
       file: book/zh/zh-intro.md
       children:
         - file: book/zh/zh-dl-overview.md
+        - file: book/zh/zh-classical-ml.md
+        - file: book/zh/zh-math-foundations.md
+        - file: book/zh/zh-neural-networks.md
+        - file: book/zh/zh-deep-learning.md
+        - file: book/zh/zh-sequences-nlp.md
+        - file: book/zh/zh-transformers-llm.md
+        - file: book/zh/zh-llm-ecosystem.md
     - title: Support
       children:
         - file: about.md
         - file: contact.md
         - file: privacy.md
         - file: terms.md
-  exports:
-    - id: tex-en-dl-overview
-      format: tex
-      article: book/en/en-dl-overview.md
-      output: exports/en-dl-overview.tex
-    - id: tex-zh-dl-overview
-      format: tex
-      article: book/zh/zh-dl-overview.md
-      output: exports/zh-dl-overview.tex
+  exports: []
 site:
   template: book-theme
   options:
